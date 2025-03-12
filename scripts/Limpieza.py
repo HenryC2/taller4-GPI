@@ -7,10 +7,10 @@ import os
 ruta_actual = os.getcwd()
 directorio_superior = os.path.dirname(ruta_actual)
 
-Proyectos_completo = pd.read_csv(f'{directorio_superior}\\Simulacion\\data\\Datos_proyectos_procesado.csv')
+Proyectos_completo = pd.read_csv(f'{ruta_actual}\\data\\processed\\Datos_proyectos_procesado.csv')
 
 # Eliminar el carácter "_" de la columna NOMBRE
 Proyectos_completo['NOMBRE'] = Proyectos_completo['NOMBRE'].str.replace('_', ' ')
 
 
-Proyectos_completo.to_csv(f'{directorio_superior}\\Simulacion\\data\\Datos_proyectos_procesado.csv', index=False)
+Proyectos_completo.to_csv(f'{ruta_actual}\\data\\processed\\Datos_proyectos_procesado.csv', index=False)

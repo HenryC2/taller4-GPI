@@ -8,7 +8,7 @@ import os
 ruta_actual = os.getcwd()
 directorio_superior = os.path.dirname(ruta_actual)
 
-Proyectos_completo = pd.read_csv(f'{directorio_superior}\\Simulacion\\data\\Datos_proyectos_procesado.csv')
+Proyectos_completo = pd.read_csv(f'{ruta_actual}\\data\\processed\\Datos_proyectos_procesado.csv')
 
 # Crear un gráfico
 conteo_partido = Proyectos_completo['PARTIDO'].value_counts()
@@ -17,4 +17,4 @@ plt.xlabel('Partido')
 plt.ylabel('Total')
 plt.title('Cantidad de proyectos por partido')
 
-plt.savefig(f'{directorio_superior}\\Resultados\\Proyectos_por_Partido.png')
+plt.savefig(f'{ruta_actual}\\results\\figures\\Proyectos_por_Partido.png')
