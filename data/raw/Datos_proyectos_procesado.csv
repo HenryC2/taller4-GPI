@@ -1,0 +1,12 @@
+ID_CONGRESISTA,NOMBRE,EDAD,PARTIDO,TIPO,FECHA_RADICACION
+1,juan pelaez,39,Polo Verde,A,12/03/2023
+1,juan pelaez,39,Polo Verde,A,4/04/2024
+1,juan pelaez,39,Polo Verde,B,4/04/2024
+2,rosa Castro,58,Alianza Democratica,B,12/04/2024
+2,rosa Castro,58,Alianza Democratica,B,12/03/2023
+2,rosa Castro,58,Alianza Democratica,A,22/03/2023
+3,Benjamin ruiz,45,Partido Alternativo,C,12/03/2023
+4,CAMILO SOLANO,36,Partido Alternativo,A,12/04/2024
+4,CAMILO SOLANO,36,Partido Alternativo,B,4/04/2024
+5,Alvaro Petro,46,Alianza Democratica,C,22/03/2023
+5,Alvaro Petro,46,Alianza Democratica,C,4/04/2024
