@@ -12,8 +12,8 @@ Proyectos_completo = pd.read_csv(f'{ruta_actual}\\data\\processed\\Datos_proyect
 # Se dejan los nombres en un mismo formato y se crea la nueva columna
 Proyectos_completo['NOMBRE'] = Proyectos_completo['NOMBRE'].str.title()
 
-tipo_dict = {'A': 'Orgánica', 'B': 'Estatutaria', 'C': 'Ordinaria'}
-Proyectos_completo['TIPO_NOMBRE'] = Proyectos_completo['TIPO'].map(tipo_dict)
+Tipo_de_iniciativas = {'A': 'Orgánica', 'B': 'Estatutaria', 'C': 'Ordinaria'}
+Proyectos_completo['TIPO_NOMBRE'] = Proyectos_completo['TIPO'].map(Tipo_de_iniciativas)
 
 
 Proyectos_completo.to_csv(f'{ruta_actual}\\data\\processed\\Datos_proyectos_procesado.csv', index=False)
