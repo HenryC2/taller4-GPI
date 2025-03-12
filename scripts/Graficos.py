@@ -13,6 +13,7 @@ Proyectos_completo = pd.read_csv(f'{ruta_actual}\\data\\processed\\Datos_proyect
 # Crear un gráfico
 conteo_partido = Proyectos_completo['PARTIDO'].value_counts()
 conteo_partido.plot(kind='bar', color='orange')
+
 plt.xlabel('Partido')
 plt.ylabel('Total')
 plt.title('Cantidad de proyectos por partido')
