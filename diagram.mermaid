@@ -1,0 +1,36 @@
+
+flowchart TB
+    subgraph FASE_1_Observación
+        style FASE_1_Observación fill:#FFD700,stroke:#000
+        A1[Observación de la dinámica del congreso] -->|raw data| A21[Simulación de los datos de congresistas]
+        A1[Observación de la dinámica del congreso] -->|raw data| A22[Simulación de los datos de proyectos]
+        A21[Simulación de los datos de congresistas] --> A3[Merge de ambos datos simulados]
+        A22[Simulación de los datos de proyectos] --> A3[Merge de ambos datos simulados]
+    end
+
+    A3 --> Fase_2_Limpieza
+
+    subgraph Fase_2_Limpieza
+        style Fase_2_Limpieza fill:#0033A0,stroke:#000,color:white
+        B1[Reemplazo de los caracteres incorrectos en nombres]
+    end
+
+    Fase_2_Limpieza --> C1
+
+    subgraph Fase_3_Procesamiento
+        style Fase_3_Procesamiento fill:#CE1126,stroke:#000,color:white
+        C1[Estandarización formato texto] --> C2[Mapeo del tipo de las iniciativas]
+    end
+
+    C2 --> D1
+
+    subgraph Fase_4_Analisis
+        style Fase_4_Analisis fill:#6BA368,stroke:#000,color:white
+        D1[Visualización de los datos agrupados]
+        D2[Cargue final de resultados]
+        D1 --> D2
+    end
+
+    
+    
+    
